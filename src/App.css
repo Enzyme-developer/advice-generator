@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  background-color: hsl(217, 19%, 16%);
+  min-height: 100vh;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: hsl(217, 19%, 24%);
+  padding: 1rem;
+  width: 40%;
+  border-radius: 10px;
+  max-height: fit-content;
+}
+
+
+.container h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.container p{
+  color:  hsl(150, 100%, 66%);
+}
+
+.container__player{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__dice{
+  background-color: hsl(150, 100%, 66%);
+  display: inline-flex;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.container__dice:hover{
+  box-shadow: 0 0 5px hsl(150, 100%, 66%), 0 0 5px hsl(150, 100%, 66%), 0 0 5px hsl(150, 100%, 66%), 0 0 5px hsl(150, 100%, 66%),
+  0 0 5px hsl(150, 100%, 66%), 0 0 5px hsl(150, 100%, 66%);
+}
+
+.container__dice-all{
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.container__player-mobile{
+  display: none;
+}
+
+@media (max-width:700px){
+
+  .container__player-mobile{
+    display: flex;
+  }
+
+  .container__player-desktop{
+    display: none;
+  }
+  
+  .container{
+    width: 100%;
+  }
+}
